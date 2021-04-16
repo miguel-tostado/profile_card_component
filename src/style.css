@@ -28,16 +28,16 @@ body {
   background-image: url(img/bg-pattern-card.svg);
   background-repeat: no-repeat;
   border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   display: flex;
   flex-direction: column;
   height: 374px;
   margin: 0 auto;
   position: relative;
   top: calc(calc(100vh - 375px) / 2);
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
 }
 
 .card-personal-info {
@@ -99,26 +99,12 @@ hr {
   width: 100%;
 }
 
-.stat {
-  margin: 0 20px;
-}
-
 .value {
   margin-bottom: 9px;
 }
 
 .background-img {
   position: fixed;
-}
-
-.background-img-top {
-  bottom: 34%;
-  right: 59%;
-}
-
-.background-img-bottom {
-  top: 58%;
-  left: 40%;
   z-index: -1;
 }
 
@@ -126,10 +112,40 @@ hr {
   .card {
     width: 350px;
   }
+
+  .background-img {
+    height: 976px;
+    width: 978px;
+  }
+
+  .background-img-top {
+    bottom: 34%;
+    right: 58%;
+  }
+
+  .background-img-bottom {
+    top: 58%;
+    left: 40%;
+  }
 }
 
 @media (max-width: 375px) {
   .card {
     width: 326px;
+  }
+
+  .background-img {
+    height: 621px;
+    width: 622px;
+  }
+
+  .background-img-top {
+    bottom: 65%;
+    right: 33%;
+  }
+
+  .background-img-bottom {
+    top: 55%;
+    left: 40%;
   }
 }
