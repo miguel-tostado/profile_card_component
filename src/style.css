@@ -1,23 +1,124 @@
 :root {
-    /* Primary */
-    --dark-cyan: hsl(185, 75%, 39%);
-    --very-dark-blue: hsl(229, 23%, 23%);
-    --dark-grayish-blue: hsl(227, 10%, 46%)
+  /* Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
 
-    /* Neutral */
-    --dark-gray: hsl(0, 0%, 59%)
+  /* Neutral */
+  --light-gray: #e8e9ec;
 
-    /* Typography */
-    --ff-Kumbh-Sans: 'Kumbh Sans', sans-serif;
+  /* Typography */
+  --ff-Kumbh-Sans: "Kumbh Sans", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: var(--dark-cyan);
-    font-size: 18px;
+  background-color: var(--dark-cyan);
+  font-family: var(--ff-Kumbh-Sans);
+  font-size: 18px;
+}
+
+.card {
+  background-color: white;
+  background-image: url(img/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 374px;
+  margin: 0 auto;
+  position: relative;
+  top: calc(calc(100vh - 375px) / 2);
+  width: 350px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.card-personal-info {
+  align-items: center;
+  margin: 87px auto 0;
+}
+
+.card-personal-info,
+.stat {
+  text-align: center;
+}
+
+.profile-pic {
+  border: solid white 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 96px;
+}
+
+.name-age {
+  margin: 19px auto 13px;
+}
+
+.name,
+.value {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+.age,
+.location,
+.label {
+  color: var(--dark-grayish-blue);
+}
+
+.label {
+  font-size: 10px;
+}
+
+.location {
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+hr {
+  border: none;
+  border-top: solid var(--light-gray) 1px;
+  height: 1px;
+}
+
+.card-account-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 24px auto;
+  width: 100%;
+}
+
+.stat {
+  margin: 0 20px;
+}
+
+.value {
+  margin-bottom: 9px;
+}
+
+.background-img {
+  position: fixed;
+}
+
+.background-img-top {
+  bottom: 34%;
+  right: 59%;
+}
+
+.background-img-bottom {
+  top: 58%;
+  left: 40%;
+  z-index: -1;
 }
