@@ -1,6 +1,8 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/720012bf-65a9-492c-9e15-c58c9dac2695/deploy-status)](https://app.netlify.com/sites/trusting-swanson-0821a3/deploys)
 
 ## Table of contents
 
